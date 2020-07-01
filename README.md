@@ -1,6 +1,8 @@
 # The Best Ensemble
 
-`The Best Ensemble` Python scikit-learn sample code to act as a very competitive baseline to beat in classification tasks
+`The Best Ensemble` Python scikit-learn sample code to act as a very competitive baseline to beat in classification tasks. [Blog post](<https://medium.com/@alik604/the-best-ensemble-for-classifications-tasks-c860c3c8185f>)
+
+
 
 ## Usage
 
