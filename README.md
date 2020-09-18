@@ -7,6 +7,13 @@
 ## Usage
 
 ```python
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, VotingClassifier
+from mlxtend.classifier import EnsembleVoteClassifier
+import xgboost  # xgboost.readthedocs.io/en/latest/python/python_api.html#xgboost.XGBClassifier
+import lightgbm # lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMClassifier.html
+import catboost # catboost.ai/docs/concepts/python-quickstart.html
+
 
 #foo()
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.85)
