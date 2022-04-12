@@ -87,7 +87,7 @@ ranking = np.array(ranking)[to_remove > 0]
 list_of_CLFs = np.array(list_of_CLFs)[to_remove > 0]
 
 
-eclf = EnsembleVoteClassifier(clfs=list_of_CLFs, refit=False, voting='soft')
+eclf = EnsembleVoteClassifier(clfs=list_of_CLFs, fit_base_estimators=False, voting='soft')
 eclf.fit(X_train, y_train)
 pred = eclf.score(X_test, y_test)
 print("Acc: %0.5f for the %s" % (pred, str(type(eclf)).split(".")[-1][:-2]))
