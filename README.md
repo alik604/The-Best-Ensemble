@@ -6,7 +6,7 @@
 
 ## Usage
 
-```python
+``` python
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, VotingClassifier
 from mlxtend.classifier import EnsembleVoteClassifier
@@ -28,6 +28,8 @@ wanted_explained_variance_ratio = 0.99
 steps_down = 2
 wanted_n_components = X_train.shape[1]
 first_time = True
+
+## we can do PCA(n_components=0.95) to keep 95% of "useful information", though its technically `explained_variance_ratio_`
 
 for i in range(X_train.shape[1]-1, 1, -steps_down):
   total_var_ratio = round(np.sum(PCA(n_components=i).fit(X_train).explained_variance_ratio_),5)
